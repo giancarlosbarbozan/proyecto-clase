@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- FAVICON - ICONO EN EL NAVEGADOR -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <!-- FRAMEWORK BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- FONTAWESOME - LIBRERÍA DE ICONOS -->
+    <script
+      src="https://kit.fontawesome.com/812c8ee19a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--LIBRERÍA DE FUENTES - GOOGLE FONTS  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- HOJA DE ESTILOS -->
+    <link rel="stylesheet" href="css/styles-contactos.css" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- INICIO DE WHATSAPP -->
+    <a href="https://wa.link/4im8rp" target="_blank" class="boton-whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+
+    <!-- FIN DE WHATSAPP -->
+
+
+    <!-- INICIO DE MENÚ DE NAVEGACIÓN -->
+    <header id="header">
+      <nav class="menu">
+        <div class="logo">
+          <a href="#">
+            <img src="img/Logo.svg" alt="" class="img-fluid img-logo" />
+          </a>
+          <a href="#" class="btn-menu" id="btn-menu">
+            <i class="fa-solid fa-bars icono-menu"></i>
+          </a>
+        </div>
+        <div class="enlaces" id="enlaces">
+          <a href="index.html">INICIO</a>
+          <a href="cursos.html">CURSOS</a>
+          <a href="especializaciones.html">ESPECIALIZACIONES</a>
+          <a href="contactos.html">CONTACTOS</a>
+          <a href="registro.html">REGISTRO</a>
+          <a href="#">LOGIN</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- FIN DE MENÚ DE NAVEGACIÓN -->
+
+    <br><br><br><br>
+
+    <article class="container">
+        <form action="enviar.php" method="post">
+        <section class="row">
+            <section class="col-xs-12 col-sm-6 col-md-6">
+                <img src="img/contacto.jpg" alt="" class="img-fluid">
+            </section>
+            <section class="col-xs-12 col-sm-6 col-md-6">
+                <label>Nombre: </label>
+                <input type="text" placeholder="Ingrese su nombre" required>
+
+                <label>Correo: </label>
+                <input type="email" placeholder="Ingrese su correo" required>
+
+                <label>Celular: </label>
+                <input type="tel" placeholder="Ingrese su celular" required>
+
+                <!-- <select>
+                    <option value="">Elige una opción: </option>
+                    <option value="M">Masculino</option>
+                    <option value="F">Femenino</option>
+                </select> -->
+
+                <textarea placeholder="Ingrese aquí su mensaje" required></textarea>
+                <input type="submit" value="Registrar" class="boton">
+            </section>
+        </section>
+        </form>
+    </article>
+
+
+    
+</body>
+</html>
